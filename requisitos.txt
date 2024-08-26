@@ -1,0 +1,50 @@
+
+### **Requisitos Funcionais**
+1. **Cadastro de Usuários**:
+   - O sistema deve permitir o cadastro de novos usuários com campos como nome, email, senha, etc.
+   - Deve haver validação de dados para evitar duplicidade de emails ou usuários já cadastrados.
+2. **Autenticação e Autorização**:
+   - O sistema deve permitir o login de usuários com autenticação baseada em JWT ou OAuth2.
+   - Deve implementar regras de autorização para que cada usuário acesse apenas suas próprias informações financeiras.
+3. **Cadastro de Despesas e Receitas**:
+   - O sistema deve permitir que o usuário registre novas despesas e receitas, informando valor, categoria, data e descrição.
+   - Deve permitir edição e exclusão de transações previamente cadastradas.
+4. **Categorias de Despesas e Receitas**:
+   - O sistema deve possibilitar o cadastro e a personalização de categorias para despesas e receitas (ex: Alimentação, Moradia, Salário, Investimentos).
+5. **Relatórios Financeiros**:
+   - O sistema deve gerar relatórios financeiros com base em categorias, períodos (mensal, anual), e outras métricas personalizáveis.
+6. **Dashboard de Visualização**:
+   - O sistema deve fornecer um dashboard que apresenta gráficos e métricas dos dados financeiros do usuário, como distribuição de gastos por categoria, receitas totais, balanço mensal, etc.
+7. **Filtros e Ordenação**:
+   - O sistema deve permitir a filtragem de transações por data, categoria, valor e outras métricas.
+   - Deve permitir a ordenação dos resultados das consultas.
+8. **Notificações de Orçamento**:
+   - O sistema deve enviar notificações quando o usuário estiver próximo ou ultrapassar limites de gastos definidos por ele.
+9. **Backup e Recuperação de Dados**:
+   - O sistema deve permitir a exportação dos dados financeiros do usuário em formatos como CSV ou JSON.
+   - Deve permitir a importação desses dados para restauração.
+10. **Segurança de Dados**:
+    - O sistema deve garantir que todas as transações sejam registradas e mantidas em conformidade com princípios de segurança e privacidade de dados.
+### **Requisitos Não Funcionais**
+1. **Desempenho**:
+   - O sistema deve ser capaz de lidar com um grande volume de dados (ex.: 10.000+ transações por usuário) sem perda significativa de desempenho.
+   - Deve responder às solicitações de leitura e escrita em um tempo médio inferior a 1 segundo.
+2. **Escalabilidade**:
+   - O backend deve ser projetado para suportar crescimento, seja horizontal ou vertical, para lidar com um número crescente de usuários simultâneos.
+3. **Disponibilidade**:
+   - O sistema deve estar disponível 99,9% do tempo, garantindo que os usuários possam acessar suas informações financeiras a qualquer momento.
+4. **Segurança**:
+   - O sistema deve seguir boas práticas de segurança como uso de HTTPS, criptografia de senhas, criptografia de dados sensíveis e proteção contra ataques comuns (ex.: SQL Injection, Cross-Site Scripting).
+   - Deve utilizar autenticação segura (ex.: OAuth2, JWT).
+5. **Conformidade com Regulamentos**:
+   - O sistema deve estar em conformidade com regulamentos de proteção de dados como LGPD (Lei Geral de Proteção de Dados) ou GDPR (General Data Protection Regulation).
+6. **Testabilidade**:
+   - O sistema deve ser projetado de maneira que permita a fácil criação de testes unitários, de integração e de carga.
+7. **Manutenibilidade**:
+   - O código deve ser bem documentado e seguir padrões de design (ex.: SOLID, DRY) para facilitar a manutenção e a evolução do sistema.
+8. **Monitoramento e Logs**:
+   - O sistema deve implementar monitoramento contínuo e geração de logs detalhados de erros e acessos para auditoria e diagnóstico de problemas.
+9. **Portabilidade**:
+   - O sistema deve ser implementado de forma que seja fácil de portar para diferentes ambientes de execução, como servidores locais ou nuvens públicas (ex.: AWS, GCP, Azure).
+10. **Resiliência**:
+    - O sistema deve ser resiliente a falhas e capaz de se recuperar rapidamente em caso de problemas como queda de serviços ou falhas de rede.
